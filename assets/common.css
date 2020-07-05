@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 8%;
+}
+
+.header-left{
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 16px;
+}
+
+.logo-a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.logo span{
+    font-weight: 900;
+}
+
+.nav-menu{
+    text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 400px;
+    position: relative;   
+}
+
+.search-bar .fa{
+    position: absolute;
+    color: #999;
+    font-size: 18px;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+}
+
+.search-box{
+    width: 100%;
+    border: 1px solid rgb(245, 242, 242);
+    background-color: rgb(245, 242, 242);
+    box-sizing: border-box;
+    padding: 10px 24px 8px 48px;
+    color: black;
+    outline: none;
+}
+
+.header-right{
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;   
+}
+
+.cart-header{
+    position: relative;
+    margin-right: 32px;
+}
+
+.cart-item-no{
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+    background-color: #009688;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+}
+
+.cart-header .fa{
+    font-size: 26px;
+    color: black;
+}
+
+.header-profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+footer{
+    width: 100%;
+    background-color: #1c1b1e;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 4% 8%;
+}
+
+.footer-heading{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+footer div{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+footer div:first-of-type {
+    padding-left: 0;
+}
+
+.project-logo{
+    width: 128px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+/********************** responsive styling ************************/
+
+@media only screen and (max-width: 786px) {
+    footer{
+        display: inline-block;
+        padding: 0 20px 20px 20px;
+    }
+
+    footer div{
+        padding: 0;
+        display: inline-block;
+        margin: 9px;
+        width: 42%;
+        box-sizing: border-box;
+    }
+
+    .footer-heading {
+        text-transform: uppercase;
+        font-weight: 400;
+        margin: 10px 0 0 0
+    }
+    .footer-link{
+        margin-top: 8px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 11px;
+    }
+    header{
+        height: 101px;
+        display: block;
+        padding: 5px;
+    }
+    .header-left{
+        display: block;
+    }
+    .nav-menu{
+        margin: 0 10px 0 0;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+    .logo {
+        font-size: 22px;
+    }
+    .header-right{
+        position: relative;
+        float: right;
+        top: -93px;
+        right: 8px;
+    }
+    .header-profile-img {
+        width: 40px;
+        height: 40px;
+    }
+    .cart-header {
+        margin-right: 20px;
+    }
+    .cart-item-no{
+        width: 14px;
+        height: 14px;
+        font-size: 10px;
+        top: -8px;
+        right: -8px;
+    }
+    .cart-header .fa {
+        font-size: 23px;
+    }
+    
+    .search-bar {
+        margin-top: 6px;
+        max-width: inherit;
+    }
+    .project-logo {
+        width: 90px;
+        bottom: 40px;
+        right: 40px;
+    }   
+}
